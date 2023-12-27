@@ -120,7 +120,6 @@
   font-display: swap;
   src:
     local(''),
-    url('$lib/assets/fonts/noto-sans-v42-regular.woff2') format('woff2'),
     url('$lib/assets/fonts/noto-sans-v42-regular.woff') format('woff');
 }
 
@@ -131,7 +130,6 @@
   font-display: swap;
   src:
     local(''),
-    url('$lib/assets/fonts/noto-sans-v42-500.woff2') format('woff2'),
     url('$lib/assets/fonts/noto-sans-v42-500.woff') format('woff');
 }
 
@@ -142,7 +140,6 @@
   font-display: swap;
   src:
     local(''),
-    url('$lib/assets/fonts/noto-sans-v42-700.woff2') format('woff2'),
     url('$lib/assets/fonts/noto-sans-v42-700.woff') format('woff');
 }
 
