@@ -1,5 +1,32 @@
 .book-content {
   font-family: var(--font-family-serif, 'Lora', 'Noto Serif JP', serif);
+  :global(p) {
+    letter-spacing: -0.03em;
+  }
+  :global(h1) {
+    letter-spacing: -0.03em;
+  }
+  :global(h2) {
+    letter-spacing: -0.03em;
+  }
+  :global(h3) {
+    letter-spacing: -0.03em;
+  }
+  :global(h4) {
+    letter-spacing: -0.03em;
+  }
+  :global(h5) {
+    letter-spacing: -0.03em;
+  }
+  :global(h6) {
+    letter-spacing: -0.03em;
+  }
+  :global(span) {
+    letter-spacing: -0.03em;
+  }
+  :global(li) {
+    letter-spacing: -0.03em;
+  }
 }
 
 .book-content {
