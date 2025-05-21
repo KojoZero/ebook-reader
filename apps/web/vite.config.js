@@ -16,6 +16,9 @@ const config = {
   },
   experimental: {
     prebundleSvelteLibraries: true
+  },
+  server: {
+    host: true
   }
 };
 

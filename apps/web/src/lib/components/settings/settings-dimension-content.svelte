@@ -12,8 +12,8 @@
   $: calculatedValue = Math.ceil(
     window[getDimension()] * (presetValue / 100 / (isFirstDimension ? 2 : 1))
   );
-  $: min = isFirstDimension ? 5 : 50;
-  $: max = isFirstDimension ? 50 : 95;
+  $: min = isFirstDimension ? 5 : 25;
+  $: max = isFirstDimension ? 75 : 95;
   $: quarter = isFirstDimension ? 25 : 75;
 
   function getDimension() {

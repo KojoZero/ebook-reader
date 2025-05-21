@@ -24,14 +24,16 @@
   ];
 </script>
 
+<!-- //THEME_READERDATASTATISTICS -->
+
 <div class={baseHeaderClasses}>
   <div class="{pxScreen} flex px-0 md:px-5">
     <div class="h12 flex grow justify-evenly xl:h-10">
       {#each settingItems as settingItem (settingItem.label)}
         <button
           class="flex grow flex-col items-center justify-center text-xs"
-          class:bg-gray-900={activeSettings === settingItem.label}
-          class:hover:bg-gray-900={activeSettings !== settingItem.label}
+          class:bg-neutral-950={activeSettings === settingItem.label}
+          class:hover:bg-neutral-950={activeSettings !== settingItem.label}
           on:click={() => (activeSettings = settingItem.label)}
         >
           <Fa class="mb-1" icon={settingItem.icon} />

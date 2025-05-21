@@ -193,7 +193,7 @@
     <div
       class="grid grid-cols-1 gap-2 items-center overflow-auto max-h-[60vh] sm:grid-cols-[auto_auto_5rem] sm:gap-4"
     >
-      <select class="sm:col-span-2" bind:value={themeToCopy}>
+      <select class="sm:col-span-2 bg-neutral-900" bind:value={themeToCopy}>
         {#each existingThemes as theme (theme.id)}
           <option value={theme.id}>
             {theme.id}
@@ -243,7 +243,7 @@
         on:alpha={handleAlphaValueChange}
       />
       <input
-        class="sm:col-span-2"
+        class="sm:col-span-2 bg-neutral-900"
         type="text"
         placeholder="Theme Name"
         bind:value={themeName}

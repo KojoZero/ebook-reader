@@ -65,6 +65,7 @@
   $: alt = `${title}_cover`;
 </script>
 
+<!-- //THEME_BOOKCARDS_PROGRESSBAR -->
 <div tabindex="0" role="button" class="aspect-w-2 aspect-h-3 relative" on:click on:keyup>
   <div class="inline">
     <div class="h-full w-full text-5xl sm:text-7xl">
@@ -89,15 +90,12 @@
 
     <div class="absolute inset-x-0 bottom-0">
       <div
-        class="sm:h-21 h-16 bg-gray-800 bg-opacity-80 p-0.5 px-1.5 text-justify text-sm text-white sm:p-1.5 sm:text-base"
+        class="sm:h-21 h-16 bg-neutral-800 bg-opacity-80 p-0.5 px-1.5 text-justify text-sm text-white sm:p-1.5 sm:text-base"
       >
         <span class="line-clamp-3">{title}</span>
       </div>
-      <div class="h-2.5 bg-gray-400 bg-opacity-80">
-        <div
-          class="h-full rounded bg-gradient-to-b from-red-600 to-red-900"
-          style:width="{progress * 100}%"
-        />
+      <div class="h-2.5 bg-neutral-500 bg-opacity-80">
+        <div class="h-full bg-gradient-to-b bg-teal-800" style:width="{progress * 100}%" />
       </div>
     </div>
   </div>

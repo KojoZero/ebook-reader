@@ -24,18 +24,36 @@
   }
 </script>
 
+<!-- //THEME_BORDERCOLOR_BUTTONTEXT 900 500 -->
+<!-- //Below, are the conditional classes for. SelectedOptionID = selected Button-->
+<!-- 
+Classes:
+  1: Selected Button Border:
+  2: Selected Button BG:
+  3: Selected Button Text:
+  4: UnSelected Button BG:
+
+  Make sure to Delete if two styles are the same
+
+
+          class:border-neutral-950={option.id === selectedOptionId}
+        class:bg-neutral-950={option.id === selectedOptionId}
+        class:text-neutral-500={(option.id === selectedOptionId && !invertColors) ||
+          (option.id !== selectedOptionId && invertColors)}
+        class:bg-neutral-900={(option.id === selectedOptionId && invertColors) ||
+          (option.id !== selectedOptionId && !invertColors)}
+-->
+
 <div class="-m-1 flex flex-wrap">
   {#each options as option}
     <div class="flex">
       <button
         title={option.id}
-        class="m-1 rounded-md border-2 border-gray-400 p-2 text-black text-lg"
+        class="m-1 rounded-md border-2 border-neutral-900 p-2 text-neutral-300 text-lg bg-neutral-900"
         class:border-4={option.thickBorders && option.id === selectedOptionId}
-        class:border-blue-300={option.id === selectedOptionId}
-        class:bg-gray-700={option.id === selectedOptionId}
-        class:text-white={(option.id === selectedOptionId && !invertColors) ||
-          (option.id !== selectedOptionId && invertColors)}
-        class:bg-white={(option.id === selectedOptionId && invertColors) ||
+        class:border-neutral-950={option.id === selectedOptionId}
+        class:bg-neutral-950={option.id === selectedOptionId}
+        class:bg-neutral-900={(option.id === selectedOptionId && invertColors) ||
           (option.id !== selectedOptionId && !invertColors)}
         style={mapToStyleString(option.style)}
         on:click={() => (selectedOptionId = option.id)}
